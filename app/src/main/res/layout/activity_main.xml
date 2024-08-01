@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="Peliculas" />
+
+    <EditText
+        android:id="@+id/etcantidad"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:hint="Digite cantidad de peliculas"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etvalor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:hint="Digite valor por pelicula"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvmensaje1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:visibility="invisible"
+        android:text="Valor bruto" />
+
+    <TextView
+        android:id="@+id/tvbruto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:hint="Valor bruto" />
+
+    <TextView
+        android:id="@+id/tvmensaje2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:visibility="invisible"
+        android:text="Descuento" />
+
+    <TextView
+        android:id="@+id/tvdescuento"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:hint="Descuento" />
+
+    <TextView
+        android:id="@+id/tvmensaje3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:visibility="invisible"
+        android:text="Valor neto" />
+
+    <TextView
+        android:id="@+id/tvneto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:hint="Valor neto" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btcalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="27dp"
+            android:onClick="Calcular"
+            android:layout_weight="1"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:onClick="Limpiar"
+            android:textSize="27dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Limpiar" />
+    </LinearLayout>
+</LinearLayout>
